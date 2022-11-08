@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using DependencyInjectionDemo.Logic;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,10 @@ builder.Services.AddServerSideBlazor();
 //will create a new inctance for a new page or every time we load the page
 //builder.Services.AddScoped<IDemoLogic,DemoLogic>();
 
+builder.Host.UseSerilog((context, config) =>
+{
+    config.WriteTo.Console();
+});
 
 var app = builder.Build();
 
