@@ -15,7 +15,7 @@ builder.Services.AddServerSideBlazor();
 //builder.Services.AddSingleton<DemoLogic>();
 
 //will create a new inctance for a new page or every time we load the page
-builder.Services.AddScoped<DemoLogic>();
+builder.Services.AddScoped<IDemoLogic,DemoLogic>();
 
 
 var app = builder.Build();
