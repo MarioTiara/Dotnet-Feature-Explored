@@ -9,13 +9,13 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
 //will create a new instance everytime it asked
- //builder.Services.AddTransient<DemoLogic>();
+ builder.Services.AddTransient<IDemoLogic,BetterDemoLogic>();
 
 //will create one instance for everybody
 //builder.Services.AddSingleton<DemoLogic>();
 
 //will create a new inctance for a new page or every time we load the page
-builder.Services.AddScoped<IDemoLogic,DemoLogic>();
+//builder.Services.AddScoped<IDemoLogic,DemoLogic>();
 
 
 var app = builder.Build();
