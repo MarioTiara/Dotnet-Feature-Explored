@@ -1,9 +1,18 @@
-﻿internal class Program
+﻿using System;
+using Microsoft.Extensions.DependencyInjection;
+internal class Program
 {
     private static void Main(string[] args)
     {
-        IDataAccess dal = new DataAccess();
-        IBusiness biz= new Business(dal);
+        var collection = new ServiceCollection();
+        collection.AddScoped<IDataAccess, DataAccess>();
+        collection.AddScoped<IBusiness, Business2>();
+
+        var provider= collection.BuildServiceProvider();
+
+
+        IDataAccess dal = provider.GetService<IDataAccess>();
+        IBusiness biz= provider.GetService<IBusiness>();
         var userinterface= new UserInterface(biz);
         userinterface.GetData();
     }
@@ -19,7 +28,7 @@ public class UserInterface
         Console.WriteLine("Enter your username:");
         var userName=Console.ReadLine();
 
-        Console.Write("Enter your password");
+        Console.Write("Enter your password:");
         var password = Console.ReadLine();
 
         
@@ -47,12 +56,16 @@ public class Business : IBusiness
 }
 
 public class Business2 : IBusiness
-
 {
+
+    private readonly IDataAccess _dataaccess;
+    public Business2(IDataAccess dataAccess){
+        _dataaccess=dataAccess;
+    }
     public void SignUp(string userName, string password)
     {
         var dataAccess = new DataAccess();
-        dataAccess.Store(userName, password);
+        _dataaccess.Store(userName, password);
     }
 }
 
@@ -65,6 +78,6 @@ public class DataAccess : IDataAccess
 {
     public void Store(string userName, string password)
     {
-
+        Console.WriteLine(userName+" "+password);
     }
 }
