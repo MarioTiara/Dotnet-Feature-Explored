@@ -15,23 +15,46 @@ public class UserInterface
         Console.Write("Enter your password");
         var password = Console.ReadLine();
 
-        var business= new Business();
+        IBusiness business= new Business2();
         business.SignUp(userName, password);
 
     }
 }
 
-public class Business
+public interface IBusiness
 {
-    public void SignUp(string userName, string password){
-        var dataAccess= new DataAccess();
+    void SignUp(string userName, string password);
+}
+
+public class Business : IBusiness
+
+{
+    public void SignUp(string userName, string password)
+    {
+        var dataAccess = new DataAccess();
         dataAccess.Store(userName, password);
     }
 }
 
-public class DataAccess
+public class Business2 : IBusiness
+
 {
-    public void Store(string userName, string password){
+    public void SignUp(string userName, string password)
+    {
+        var dataAccess = new DataAccess();
+        dataAccess.Store(userName, password);
+    }
+}
+
+public interface IDataAccess
+{
+    void Store(string userName, string password);
+}
+
+public class DataAccess : IDataAccess
+{
+    public void Store(string userName, string password)
+    {
 
     }
 }
