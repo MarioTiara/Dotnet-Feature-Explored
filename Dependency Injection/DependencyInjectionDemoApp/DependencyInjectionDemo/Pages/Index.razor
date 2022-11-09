@@ -1,0 +1,25 @@
+﻿@page "/"
+@using DependencyInjectionDemo.Logic
+@inject IDemoLogic logic
+@inject ILogger<Index> logger
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+<h3>
+    value1:@logic.Value1
+</h3>
+<h3>
+    value2:@logic.Value1
+</h3>
+@code{
+    //private DemoLogic logic;
+    protected override void OnInitialized()
+    {
+        //logic = new();
+        logger.LogInformation("Displaying values of {value1} and Value{2}",
+            logic.Value1,
+            logic.Value2);
+    }
+}
+
