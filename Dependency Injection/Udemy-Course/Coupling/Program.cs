@@ -2,12 +2,19 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        IDataAccess dal = new DataAccess();
+        IBusiness biz= new Business(dal);
+        var userinterface= new UserInterface(biz);
+        userinterface.GetData();
     }
 }
 
 public class UserInterface
 {
+    private  readonly IBusiness _business;
+    public UserInterface (IBusiness business){
+        _business=business;
+    }
     public void GetData(){
         Console.WriteLine("Enter your username:");
         var userName=Console.ReadLine();
@@ -15,8 +22,8 @@ public class UserInterface
         Console.Write("Enter your password");
         var password = Console.ReadLine();
 
-        IBusiness business= new Business2();
-        business.SignUp(userName, password);
+        
+        _business.SignUp(userName, password);
 
     }
 }
@@ -27,12 +34,15 @@ public interface IBusiness
 }
 
 public class Business : IBusiness
-
 {
+    private readonly IDataAccess _dataaccess;
+    public Business(IDataAccess dataAccess){
+        _dataaccess=dataAccess;
+    }
     public void SignUp(string userName, string password)
     {
-        var dataAccess = new DataAccess();
-        dataAccess.Store(userName, password);
+        
+        _dataaccess.Store(userName, password);
     }
 }
 
