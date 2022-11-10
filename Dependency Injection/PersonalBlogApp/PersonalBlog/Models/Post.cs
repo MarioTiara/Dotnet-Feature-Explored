@@ -10,7 +10,7 @@ namespace PersonalBlog.Models
     {
         [Key]
         public string Id { get; set; }
-        public DateTime PostDatatime { get; set; }
+        public DateTime PostDatetime { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
     }
