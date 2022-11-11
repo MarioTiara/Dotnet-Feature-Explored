@@ -1,0 +1,98 @@
+[
+  {
+    "FirstName":"Strickland",
+    "LastName":"Boone",
+    "Age":33,
+    "Addresses":[
+      {
+        "StreetAddress":"Grattan Street",
+        "City":"Martinsville",
+        "State":"South Dakota",
+        "ZipCode":"15740-0000"
+      },
+      {
+        "StreetAddress":"Atlantic Lane",
+        "City":"Valrico",
+        "State":"AL",
+        "ZipCode":"36116-0000"
+      },
+      {
+        "StreetAddress":"Heath Drive",
+        "City":"Montgomery ",
+        "State":"AL",
+        "ZipCode":"36108-0000"
+      },
+      {
+        "StreetAddress":"Yule Street",
+        "City":"Arvada",
+        "State":"CO",
+        "ZipCode":"80007-0000"
+      }
+    ],
+    "EmailAddresses":[
+      {
+        "EmailAddress":"Lauren_Coleman5236@nickia.com"
+      },
+      {
+        "EmailAddress":"Evelynn_Gosling9900@ovock.tech"
+      },
+      {
+        "EmailAddress":"Cedrick_Rothwell7821@bungar.biz"
+      },
+      {
+        "EmailAddress":"Javier_Moore6254@brety.org"
+      },
+      {
+        "EmailAddress":"Jennifer_Barclay2039@joiniaa.com"
+      }
+    ]
+  },
+  {
+    "FirstName":"Tate",
+    "LastName":"Solis",
+    "Age":35,
+    "Addresses":[
+      {
+        "StreetAddress":"Pine Ridge Circle",
+        "City":"Martinsville",
+        "State":"AK",
+        "ZipCode":"99516-0000"
+      },
+      {
+        "StreetAddress":"Anderson Road",
+        "City":"Nashville",
+        "State":"TN",
+        "ZipCode":"37217-0000"
+      },
+      {
+        "StreetAddress":"Eastridge Circle",
+        "City":"Moore",
+        "State":"OK",
+        "ZipCode":"73160-0000"
+      },
+      {
+        "StreetAddress":"Naples Avenue",
+        "City":"Panama City",
+        "State":"FL",
+        "ZipCode":"32405-0000"
+      }
+    ],
+    "EmailAddresses":[
+      {
+        "EmailAddress":"Cedrick_Rothwell7821@bungar.biz"
+      },
+      {
+        "EmailAddress":"Javier_Moore6254@brety.org"
+      },
+      {
+        "EmailAddress":"Marie_Murray4990@supunk.biz"
+      },
+      {
+        "EmailAddress":"Charlotte_Umney4994@elnee.tech"
+      },
+      {
+        "EmailAddress":"Johnny_Vinton9801@bulaffy.com"
+      }
+    ]
+  }
+]
