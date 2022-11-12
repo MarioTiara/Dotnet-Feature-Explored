@@ -27,10 +27,33 @@ namespace EFDemoWeb.Pages
         {
             LoadSampleData();
 
-            var people=_db.People
-                .Include(a=>a.Addresses)
-                .Include(a=>a.EmailAddresses)
+            //BAD EF query
+            // It will download all data from People table, and filter it
+            //var people = _db.People
+            //    .Include(a => a.Addresses)
+            //    .Include(a => a.EmailAddresses)
+            //    .ToList()
+            //    .Where(x => ApprovedAge(x.Age));  
+
+
+            //It is a good EF query, because the "Where(x=> x.Age>=18 && x.Age<=65)" can be
+            // transtlated into sql query so the filter will be in sql query then the filtered data 
+            // will be downloaded. 
+            var people = _db.People
+                .Include(a => a.Addresses)
+                .Include(a => a.EmailAddresses)
+                .Where(x=> x.Age>=18 && x.Age<=65)
                 .ToList();
+                
+
+
+
+        }
+
+
+        private bool ApprovedAge(int age)
+        {
+            return (age >= 18 && age <= 65);
         }
 
         private void LoadSampleData()
