@@ -4,14 +4,16 @@ using EFDataAccessLibrary.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFDataAccessLibrary.Migrations
 {
     [DbContext(typeof(PeopleContext))]
-    partial class PeopleContextModelSnapshot : ModelSnapshot
+    [Migration("20221111161410_deleteIdRequired")]
+    partial class deleteIdRequired
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -93,9 +95,8 @@ namespace EFDataAccessLibrary.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)")
+                    b.Property<int>("LastName")
+                        .HasColumnType("int")
                         .HasMaxLength(50);
 
                     b.HasKey("Id");
@@ -113,7 +114,7 @@ namespace EFDataAccessLibrary.Migrations
             modelBuilder.Entity("EFDataAccessLibrary.Models.Email", b =>
                 {
                     b.HasOne("EFDataAccessLibrary.Models.Person", null)
-                        .WithMany("EmailAddresses")
+                        .WithMany("Emails")
                         .HasForeignKey("PersonId");
                 });
 #pragma warning restore 612, 618
