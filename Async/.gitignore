@@ -1,0 +1,5 @@
+bin
+obj\project.nuget.cache
+obj\Debug\netcoreapp3.1\Async.AssemblyInfoInputs.cache
+obj\Debug\netcoreapp3.1\Async.GeneratedMSBuildEditorConfig.editorconfig
+obj\Debug\netcoreapp3.1\Async.AssemblyInfoInputs.cache
