@@ -9,7 +9,7 @@ namespace Async
 {
     class Program
     {
-        static void  Main(string[] args)
+        static async Task  Main(string[] args)
         {
             // string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
             // var taks= new List<Task> {SummonDog.SummonDogLocally(), SummonDog.SummonDogFromURL(URL)};
@@ -18,13 +18,13 @@ namespace Async
             Coffee cup = AsyncBreakfast.PourCoffe();
             Console.WriteLine("coffee is ready");
 
-            Egg eggs =AsyncBreakfast.FryEggs(2);
+            Egg eggs = await AsyncBreakfast.FryEggsAsync(2);
             Console.WriteLine("eggs are ready");
 
-            Bacon bacon =AsyncBreakfast.FryBacon(3);
+            Bacon bacon =await AsyncBreakfast.FryBaconAsync(3);
             Console.WriteLine("bacon is ready");
 
-            Toast toast = ToastBread(2);
+            Toast toast = await AsyncBreakfast.ToastBreadAsync(2);
             AsyncBreakfast.ApplyButter(toast);
             ApplyJam(toast);
             Console.WriteLine("toast is ready");
