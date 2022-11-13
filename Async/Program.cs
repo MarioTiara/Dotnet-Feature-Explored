@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Net.Http;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 namespace Async
@@ -7,7 +8,8 @@ namespace Async
     {
         static void Main(string[] args)
         {
-            SummonDogLocally();
+            string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
+            
         }
 
         static async Task SummonDogLocally(){
@@ -19,6 +21,14 @@ namespace Async
             //display the data inside the txt file
             Console.WriteLine($"2. Dog Summoned Locally \n{dogtext}");
 
+        }
+
+        static async Task SummonDogFromURL (string URL){
+            Console.WriteLine("1. Summoning Dog from URL ...");
+            using (var httpclient= new HttpClient()){
+                string result = await httpclient.GetStringAsync(URL);
+                  Console.WriteLine($"2. Dog Summoned Locally \n{result}");
+            }
         }
        
     }
