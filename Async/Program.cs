@@ -43,22 +43,22 @@ namespace Async
             Coffee cup = AsyncBreakfast.PourCoffe();
             Console.WriteLine("Coffee is ready");
 
-            Task<Egg> eggTask= AsyncBreakfast.FryEggsAsync(2);
-            Egg eggs= await eggTask;
-            Console.WriteLine("Eggs are ready");
-
+            Task<Egg> eggsTask= AsyncBreakfast.FryEggsAsync(2);
             Task<Bacon> baconTask= AsyncBreakfast.FryBaconAsync(3);
+            Task<Toast> toastTask= AsyncBreakfast.ToastBreadAsync(2);
+
+            Toast toast = await toastTask;
+            AsyncBreakfast.ApplyButter(toast);
+            AsyncBreakfast.ApplyJam(toast);
+            Console.WriteLine("Toast is ready");
+            Juice oj = PourOJ();
+            Console.WriteLine("Oj is ready");
+
+            Egg eggs = await eggsTask;
+            Console.WriteLine("Eggs are ready");
             Bacon bacon = await baconTask;
             Console.WriteLine("Bacon is ready");
 
-            Task<Toast> toastTask= AsyncBreakfast.ToastBreadAsync(2);
-            Toast toast=await toastTask;
-            ApplyButter(toast);
-            ApplyJam(toast);
-            Console.WriteLine("Toast is ready");
-
-            Juice oj = PourOJ();
-            Console.WriteLine("Oj is ready");
             Console.WriteLine("Breakfast is ready!");
         }
 
