@@ -14,10 +14,15 @@ namespace Async
             // string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
             // var taks= new List<Task> {SummonDog.SummonDogLocally(), SummonDog.SummonDogFromURL(URL)};
             // await Task.WhenAll(taks);
+            await DoNotBlockThread();
+           
+        }
 
-            Coffee cup = AsyncBreakfast.PourCoffe();
+        static async Task DoNotBlockThread(){
+             Coffee cup = AsyncBreakfast.PourCoffe();
             Console.WriteLine("coffee is ready");
 
+            
             Egg eggs = await AsyncBreakfast.FryEggsAsync(2);
             Console.WriteLine("eggs are ready");
 
