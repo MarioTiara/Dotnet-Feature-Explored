@@ -21,6 +21,9 @@ namespace Async
         public static void ApplyJam(Toast toast)=> 
                     Console.WriteLine("Putting jam on the toast");
 
+        public static void ApplyButter(Toast toast) =>
+            Console.WriteLine("Putting butter on the toast");
+
         public static Toast ToastBread(int slices){
             for (int slice=0; slice<slices;slice++){
                 Console.WriteLine("Putting a slice of bread in the toaster");
@@ -46,7 +49,7 @@ namespace Async
             return new Bacon();
         }
 
-        public static Egg FryEgg (int howMany){
+        public static Egg FryEggs (int howMany){
             Console.WriteLine("Warming the egg pan...");
             Task.Delay(3000).Wait();
             Console.WriteLine($"cracking {howMany} eggs");
