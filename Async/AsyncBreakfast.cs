@@ -34,6 +34,16 @@ namespace Async
             return new Toast();
         }
 
+        public static async Task<Toast> ToastBreadAsync(int slices){
+            for (int slice=0; slice<slices;slice++){
+                Console.WriteLine("Putting a slice of bread in the toaster");
+            }
+            Console.WriteLine("Start toasting ..");
+            await Task.Delay(3000);
+            Console.WriteLine("remove toas from toaster");
+            return new Toast();
+        }
+
         public static Bacon FryBacon (int slices){
             Console.WriteLine($"putting {slices} slices of bacon in the pan");
             Console.WriteLine("cooking first side of bacon...");
@@ -49,12 +59,38 @@ namespace Async
             return new Bacon();
         }
 
+        public static async Task<Bacon> FryBaconAsync (int slices){
+            Console.WriteLine($"putting {slices} slices of bacon in the pan");
+            Console.WriteLine("cooking first side of bacon...");
+            await Task.Delay(3000);
+            for (int slice = 0; slice < slices; slice++)
+            {
+                Console.WriteLine("flipping a slice of bacon");
+            }
+            Console.WriteLine("cooking the second side of bacon...");
+            await Task.Delay(3000);
+            Console.WriteLine("Put bacon on plate");
+
+            return new Bacon();
+        }
+
         public static Egg FryEggs (int howMany){
             Console.WriteLine("Warming the egg pan...");
             Task.Delay(3000).Wait();
             Console.WriteLine($"cracking {howMany} eggs");
             Console.WriteLine("cooking the eggs ...");
             Task.Delay(3000).Wait();
+            Console.WriteLine("Put eggs on plate");
+
+            return new Egg();
+        }
+
+        public static   async Task<Egg> FryEggsAsync (int howMany){
+            Console.WriteLine("Warming the egg pan...");
+            await Task.Delay(3000);
+            Console.WriteLine($"cracking {howMany} eggs");
+            Console.WriteLine("cooking the eggs ...");
+            await Task.Delay(3000);
             Console.WriteLine("Put eggs on plate");
 
             return new Egg();
