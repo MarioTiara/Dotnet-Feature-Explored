@@ -2,14 +2,17 @@
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+
 namespace Async
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
-            
+            var taks= new List<Task> {SummonDogLocally(), SummonDogFromURL(URL)};
+            await Task.WhenAll(taks);
         }
 
         static async Task SummonDogLocally(){
@@ -27,7 +30,7 @@ namespace Async
             Console.WriteLine("1. Summoning Dog from URL ...");
             using (var httpclient= new HttpClient()){
                 string result = await httpclient.GetStringAsync(URL);
-                  Console.WriteLine($"2. Dog Summoned Locally \n{result}");
+                  Console.WriteLine($"2. Dog Summoned url \n{result}");
             }
         }
        
