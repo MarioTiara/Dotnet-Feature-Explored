@@ -11,9 +11,7 @@ namespace Async
     {
         static async Task  Main(string[] args)
         {
-            // string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
-            // var taks= new List<Task> {SummonDog.SummonDogLocally(), SummonDog.SummonDogFromURL(URL)};
-            // await Task.WhenAll(taks);
+            await SummonDogRun();
             await DoNotBlockThread();
            
         }
@@ -37,6 +35,12 @@ namespace Async
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
+        }
+
+        static async Task SummonDogRun(){
+            string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
+            var taks= new List<Task> {SummonDog.SummonDogLocally(), SummonDog.SummonDogFromURL(URL)};
+            await Task.WhenAll(taks);
         }
        
     }
