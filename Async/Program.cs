@@ -47,11 +47,18 @@ namespace Async
             var baconTask = FryBaconAsync(3);
             var toastTask = MakeToastWithButterAndJamAsync(2);
 
-            await Task.WhenAll(eggsTask, baconTask, toastTask);
-            Console.WriteLine("eggs are ready");
-            Console.WriteLine("bacon is ready");
-            Console.WriteLine("toast is ready");
-
+            var BreakfastTasks= new List<Task> {eggsTask, baconTask, toastTask};
+            while(BreakfastTasks.Count>0){
+                Task finishedTask= await Task.WhenAny(BreakfastTasks);
+                if (finishedTask==eggsTask){
+                    Console.WriteLine("eggs are ready");
+                }else if(finishedTask==baconTask){
+                    Console.WriteLine("bacon is ready");
+                }else if (finishedTask==toastTask){
+                    Console.WriteLine("toast is ready");
+                }
+                BreakfastTasks.Remove(finishedTask);
+            }
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
