@@ -12,8 +12,8 @@ namespace Async
         static async Task  Main(string[] args)
         {
             // await SummonDogRun();
-            await DoNotBlockThread();
-            Console.WriteLine("======================================");
+            //await DoNotBlockThread();
+          
             await Taskconcurrently();
            
         }
@@ -47,19 +47,15 @@ namespace Async
             var baconTask = FryBaconAsync(3);
             var toastTask = MakeToastWithButterAndJamAsync(2);
 
-            var eggs = await eggsTask;
+            await Task.WhenAll(eggsTask, baconTask, toastTask);
             Console.WriteLine("eggs are ready");
-
-            var bacon = await baconTask;
             Console.WriteLine("bacon is ready");
-
-            var toast = await toastTask;
             Console.WriteLine("toast is ready");
 
             Juice oj = PourOJ();
             Console.WriteLine("oj is ready");
             Console.WriteLine("Breakfast is ready!");
-                }
+        }
 
         static async Task SummonDogRun(){
             string URL= "https://raw.githubusercontent.com/l3oxer/Doggo/main/README.md";
