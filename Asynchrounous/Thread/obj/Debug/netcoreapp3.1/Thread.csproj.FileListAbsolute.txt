@@ -1,0 +1,14 @@
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\bin\Debug\netcoreapp3.1\Thread.exe
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\bin\Debug\netcoreapp3.1\Thread.deps.json
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\bin\Debug\netcoreapp3.1\Thread.runtimeconfig.json
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\bin\Debug\netcoreapp3.1\Thread.runtimeconfig.dev.json
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\bin\Debug\netcoreapp3.1\Thread.dll
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\bin\Debug\netcoreapp3.1\Thread.pdb
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.csproj.AssemblyReference.cache
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.GeneratedMSBuildEditorConfig.editorconfig
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.AssemblyInfoInputs.cache
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.AssemblyInfo.cs
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.csproj.CoreCompileInputs.cache
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.dll
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.pdb
+E:\Personal\Dotnet-Feature-Explored\Asynchrounous\Thread\obj\Debug\netcoreapp3.1\Thread.genruntimeconfig.cache
