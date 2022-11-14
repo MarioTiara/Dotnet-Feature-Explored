@@ -12,7 +12,8 @@ namespace PersonalBlog.Models
         }
 
         public static DbSet<Post> posts { get; set; }
-
+        
+        
         
     }
 }

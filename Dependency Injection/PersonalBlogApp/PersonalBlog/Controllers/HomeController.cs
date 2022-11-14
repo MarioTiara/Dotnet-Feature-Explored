@@ -6,15 +6,17 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using PersonalBlog.Models;
 
 namespace PersonalBlog.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private readonly DataContext _dataContext;
         public HomeController(ILogger<HomeController> logger)
         {
+            
             _logger = logger;
         }
 

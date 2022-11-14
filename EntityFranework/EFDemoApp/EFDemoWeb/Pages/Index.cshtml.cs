@@ -44,10 +44,6 @@ namespace EFDemoWeb.Pages
                 .Include(a => a.EmailAddresses)
                 .Where(x=> x.Age>=18 && x.Age<=65)
                 .ToList();
-                
-
-
-
         }
 
 
