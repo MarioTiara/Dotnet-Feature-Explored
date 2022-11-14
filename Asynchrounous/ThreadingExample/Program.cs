@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Thread
+namespace ThreadingExample
 {
     class Program
     {

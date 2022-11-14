@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Thread\\Thread.csproj",
-      "projectName": "Thread",
-      "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Thread\\Thread.csproj",
+      "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\ThreadingExample\\ThreadingExample.csproj",
+      "projectName": "ThreadingExample",
+      "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\ThreadingExample\\ThreadingExample.csproj",
       "packagesPath": "C:\\Users\\local.admin.temp\\.nuget\\packages\\",
-      "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Thread\\obj\\",
+      "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\ThreadingExample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\local.admin.temp\\AppData\\Roaming\\NuGet\\NuGet.Config",
