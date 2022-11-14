@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Personal\\Dotnet-Feature-Explored\\Async\\Async.csproj": {}
+    "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Async\\Async.csproj": {}
   },
   "projects": {
-    "E:\\Personal\\Dotnet-Feature-Explored\\Async\\Async.csproj": {
+    "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Async\\Async.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\Async\\Async.csproj",
+        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Async\\Async.csproj",
         "projectName": "Async",
-        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\Async\\Async.csproj",
+        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Async\\Async.csproj",
         "packagesPath": "C:\\Users\\local.admin.temp\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\Async\\obj\\",
+        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\Asynchrounous\\Async\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\local.admin.temp\\AppData\\Roaming\\NuGet\\NuGet.Config",

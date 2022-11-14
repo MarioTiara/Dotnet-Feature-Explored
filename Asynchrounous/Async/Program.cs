@@ -14,8 +14,11 @@ namespace Async
             // await SummonDogRun();
             //await DoNotBlockThread();
           
-            await Taskconcurrently();
-           
+            //await Taskconcurrently();
+
+             int Length= await TaksDemo.GetUrlContentLenghtAsync();
+             Console.WriteLine(Length);
+            
         }
 
         static async Task DoNotBlockThread(){
