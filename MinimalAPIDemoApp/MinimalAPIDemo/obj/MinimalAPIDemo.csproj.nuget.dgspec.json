@@ -1,25 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {}
+    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {}
   },
   "projects": {
-    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {
+    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
-        "projectName": "MinimalAPIDemo",
-        "projectPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
-        "packagesPath": "C:\\Users\\local.admin.temp\\.nuget\\packages\\",
-        "outputPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\obj\\",
+        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\mario.pratama\\.nuget\\packages\\",
+        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\local.admin.temp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mario.pratama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
@@ -36,9 +40,81 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
+        "projectName": "MinimalAPIDemo",
+        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
+        "packagesPath": "C:\\Users\\mario.pratama\\.nuget\\packages\\",
+        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mario.pratama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
