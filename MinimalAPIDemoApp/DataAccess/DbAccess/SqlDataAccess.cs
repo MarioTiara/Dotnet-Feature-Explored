@@ -1,7 +1,6 @@
 ﻿using Dapper;
-using Microsoft.Extensions.Configuration;
-using System;
 using System.Data;
+using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 
 namespace DataAccess.DbAccess
@@ -16,13 +15,14 @@ namespace DataAccess.DbAccess
         }
 
         public async Task<IEnumerable<T>> LoadData<T, U>(
-            string storedProcedured,
-            U paramaters,
+            string storedProcedure,
+            U parameters,
             string connectionId = "Default")
         {
             using IDbConnection connection = new SqlConnection(_config.GetConnectionString(connectionId));
-            return await connection.QueryAsync<T>(storedProcedured, paramaters,
-                                                commandType: CommandType.StoredProcedure);
+
+            return await connection.QueryAsync<T>(storedProcedure, parameters,
+                commandType: CommandType.StoredProcedure);
         }
 
         public async Task SaveData<T>(
@@ -31,11 +31,10 @@ namespace DataAccess.DbAccess
             string connectionId = "Default")
         {
             using IDbConnection connection = new SqlConnection(_config.GetConnectionString(connectionId));
+
             await connection.ExecuteAsync(storedProcedure, parameters,
                 commandType: CommandType.StoredProcedure);
         }
-
-
-
     }
+
 }

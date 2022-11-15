@@ -6,7 +6,7 @@
     <Name>UserDB</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{3aa0fa5b-5b42-4dc7-830a-28bb2e36e050}</ProjectGuid>
+    <ProjectGuid>{101f83ce-a5f7-4dcb-94e3-5110dbdfe308}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -63,7 +63,7 @@
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
     <Build Include="dbo\StoredProcedures\spUser_GetAll.sql" />
-    <Build Include="dbo\StoredProcedures\spUSer_Get.sql" />
+    <Build Include="dbo\StoredProcedures\spUser_Get.sql" />
     <Build Include="dbo\StoredProcedures\spUser_Delete.sql" />
     <Build Include="dbo\StoredProcedures\spUser_Insert.sql" />
     <Build Include="dbo\StoredProcedures\spUser_Update.sql" />

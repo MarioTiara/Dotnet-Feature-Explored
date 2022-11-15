@@ -46,11 +46,11 @@
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.5, )"
+              "version": "[4.8.3, )"
             }
           },
           "imports": [

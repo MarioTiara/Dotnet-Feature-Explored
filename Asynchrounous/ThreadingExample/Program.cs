@@ -4,6 +4,7 @@ namespace ThreadingExample
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
              Thread t1 = new Thread (()=>Job.PrintB());
@@ -11,6 +12,9 @@ namespace ThreadingExample
              for (int i=0; i<1000; i++){
                 Console.Write("A");
              }
+
+             
+
 
         }
     }
