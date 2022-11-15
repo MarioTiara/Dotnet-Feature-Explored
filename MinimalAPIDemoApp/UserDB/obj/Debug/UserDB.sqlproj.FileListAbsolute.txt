@@ -1,0 +1,10 @@
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\bin\Debug\UserDB.dacpac
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\bin\Debug\UserDB.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\bin\Debug\UserDB.pdb
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\UserDB.sqlproj.AssemblyReference.cache
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\Model.xml
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\refactor.xml
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\postdeploy.sql
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\predeploy.sql
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\UserDB.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\UserDB.pdb
