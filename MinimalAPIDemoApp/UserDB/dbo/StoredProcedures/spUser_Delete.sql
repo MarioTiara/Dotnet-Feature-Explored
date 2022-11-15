@@ -1,6 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[spUser_Delete]
-	@param1 int = 0,
-	@param2 int
+	@Id int
 AS
-	SELECT @param1, @param2
-RETURN 0
+begin
+	delete
+	from dbo.[User]
+	where Id=@Id
+end
