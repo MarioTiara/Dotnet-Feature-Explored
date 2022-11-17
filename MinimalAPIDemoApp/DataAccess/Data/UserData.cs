@@ -29,7 +29,7 @@ namespace DataAccess.Data
     }
 
     public Task InsertUser(UserModel user) =>
-        _db.SaveData("dbo.spUser_Insert", new { user.FirstName, user.LastName });
+        _db.SaveData("dbo.spUser_Insert", new { user.FirstName, user.LastName, user.EmailAddress, user.Password});
 
     public Task UpdateUser(UserModel user) =>
         _db.SaveData("dbo.spUser_Update", user);

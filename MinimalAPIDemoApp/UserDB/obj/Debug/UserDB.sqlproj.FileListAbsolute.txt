@@ -1,10 +1,6 @@
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\bin\Debug\UserDB.dacpac
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\bin\Debug\UserDB.dll
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\bin\Debug\UserDB.pdb
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\UserDB.sqlproj.AssemblyReference.cache
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\Model.xml
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\refactor.xml
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\postdeploy.sql
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\predeploy.sql
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\UserDB.dll
-C:\Users\mario.pratama\Downloads\MinimalAPIDemoAppPart2\UserDB\obj\Debug\UserDB.pdb
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\bin\Debug\UserDB.dacpac
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\bin\Debug\UserDB.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\bin\Debug\UserDB.pdb
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\UserDB.sqlproj.AssemblyReference.cache
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\UserDB.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\UserDB\obj\Debug\UserDB.pdb

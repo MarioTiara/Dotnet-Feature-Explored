@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimalAPIDemo", "MinimalAP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{EE46A7D6-3E8C-4F34-A5C3-6F6C3B7A4956}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "UserDB", "UserDB\UserDB.sqlproj", "{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "UserDB", "UserDB\UserDB.sqlproj", "{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +23,12 @@ Global
 		{EE46A7D6-3E8C-4F34-A5C3-6F6C3B7A4956}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE46A7D6-3E8C-4F34-A5C3-6F6C3B7A4956}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE46A7D6-3E8C-4F34-A5C3-6F6C3B7A4956}.Release|Any CPU.Build.0 = Release|Any CPU
-		{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}.Release|Any CPU.Build.0 = Release|Any CPU
-		{101F83CE-A5F7-4DCB-94E3-5110DBDFE308}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1A6AE5-7A2D-429B-9FCA-05CFCF236FBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
