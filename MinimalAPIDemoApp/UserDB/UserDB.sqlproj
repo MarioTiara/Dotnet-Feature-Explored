@@ -71,6 +71,7 @@
     <Build Include="dbo\StoredProcedures\Movie\spMovie_Update.sql" />
     <Build Include="dbo\StoredProcedures\Movie\spMovie_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Movie\spMovie_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\User\spUser_GetbyUserName.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
