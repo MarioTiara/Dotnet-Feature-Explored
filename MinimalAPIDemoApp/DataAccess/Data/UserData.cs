@@ -28,7 +28,15 @@ namespace DataAccess.Data
         return results.FirstOrDefault();
     }
 
-    public Task InsertUser(UserModel user) =>
+    public async Task<UserModel?> GetUser(string Username)
+    {
+        var results = await _db.LoadData<UserModel, dynamic>(
+            "dbo.spUser_GetbyUserName",
+            new { Username = Username });
+        return results.FirstOrDefault();
+    }
+
+        public Task InsertUser(UserModel user) =>
         _db.SaveData("dbo.spUser_Insert", new { user.FirstName, user.LastName, user.EmailAddress, user.Password});
 
     public Task UpdateUser(UserModel user) =>
