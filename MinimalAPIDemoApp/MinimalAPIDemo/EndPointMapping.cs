@@ -21,6 +21,9 @@ public static class EndPointMapping
 
         MovieEndPoint movieEndPoint = new MovieEndPoint();
         app.MapGet("/Movies", movieEndPoint.GetMovies);
+        app.MapPost("/Movies", movieEndPoint.CreateMovie);
+        app.MapPut("/Movies", movieEndPoint.UpdateMovie);
+        app.MapDelete("/Movies",movieEndPoint.DeleteMovie);
 
 
     }
