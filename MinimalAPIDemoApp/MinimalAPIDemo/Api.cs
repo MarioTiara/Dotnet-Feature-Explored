@@ -1,6 +1,7 @@
 ﻿using MinimalAPIDemo.Services;
 using MinimalAPIDemo.Models;
-
+using Microsoft.Extensions.Options;
+using MinimalAPIDemo.Config;
 
 namespace MinimalAPIDemo;
 
@@ -9,6 +10,7 @@ public static class Api
     public static void ConfigureApi(this WebApplication app)
     {
         // All of my API endpoint mapping
+        app.MapPost("/Login", Login);
         app.MapGet("/Users", GetUsers);
        // app.MapGet("/Users/{id}", GetUserById);
         app.MapGet("/Users/{UserName}", GetUserByUserName);
@@ -17,13 +19,29 @@ public static class Api
         app.MapDelete("/Users", DeleteUser);
     }
 
-    private static async Task<IResult> Login(ModelUserLogin user, IUserData data)
+    private static async Task<IResult> Login(ModelUserLogin user, IUserData data, IOptions<JwtConfig> options)
     {
-        if (!string.IsNullOrEmpty(user.UserName)&& !string.IsNullOrEmpty(user.Password)){
-            var loggedUser=await data.GetUser(user.UserName);
-            if (loggedUser is null) return Results.NotFound("User not found");
-            if (loggedUser.Password != user.Password) return Results.NotFound("UserName and Password is not Mattching");
-            string jwttoken=Auth
+
+        try
+        {
+            if (!string.IsNullOrEmpty(user.UserName) && !string.IsNullOrEmpty(user.Password))
+            {
+                var loggedUser = await data.GetUser(user.UserName);
+                if (loggedUser is null) return Results.NotFound("User not found");
+                if (loggedUser.Password != user.Password) return Results.NotFound("UserName and Password is not Mattching");
+                string jwttoken = new AuthenticationService().GetToken(loggedUser,user, options);
+                var value = options.Value.Key;
+                return Results.Ok(jwttoken);
+            }
+            else
+            {
+                return Results.NotFound();
+            }
+            
+        }
+        catch (Exception ex)
+        {
+            return Results.Problem(ex.Message);
         }
     }
 
@@ -31,6 +49,7 @@ public static class Api
     {
         try
         {
+            
             return Results.Ok(await data.GetUsers());
         }
         catch (Exception ex)
