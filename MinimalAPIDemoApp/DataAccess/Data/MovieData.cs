@@ -31,16 +31,16 @@ namespace DataAccess.Data
         }
 
         public Task InsertMovie(MovieModel movie) =>
-            _db.SaveData("dbo.spMovie_Inset", new
+            _db.SaveData("dbo.spMovie_Insert", new
             {
                 movie.Title,
                 movie.Description,
                 movie.Rating
             });
 
-        public Task UpdateUser(MovieModel movie) =>
+        public Task UpdateMovie(MovieModel movie) =>
             _db.SaveData("dbo.spMovie_Update", movie);
-        public Task DeleteUser(int id) =>
+        public Task DeleteMovie(int id) =>
             _db.SaveData("dbo.spMovie_Delete", new { Id = id });
     }
 }
