@@ -6,6 +6,7 @@
 * [ORM - Entity Framework](https://github.com/MarioTiara/Dotnet-Feature-Explored/tree/main/EntityFramework)
 * [ORM - Dapper](https://github.com/MarioTiara/Dotnet-Feature-Explored/tree/main/MinimalAPIDemoApp/DataAccess)
 * [Minimal API](https://github.com/MarioTiara/Dotnet-Feature-Explored/tree/main/MinimalAPIDemoApp/MinimalAPIDemo)
+* [JWT Authentication & Authorization](https://github.com/MarioTiara/Dotnet-Feature-Explored/tree/main/MinimalAPIDemoApp/MinimalAPIDemo)
 
 **Author**
 [Mario Tiara Pratama](https://github.com/MarioTiara)
