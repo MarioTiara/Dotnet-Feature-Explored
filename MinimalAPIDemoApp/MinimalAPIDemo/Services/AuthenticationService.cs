@@ -1,6 +1,7 @@
 ﻿using DataAccess.Models;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MinimalAPIDemo.Configuration;
+using MinimalAPIDemo.Config;
 using MinimalAPIDemo.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -10,13 +11,8 @@ namespace MinimalAPIDemo.Services
 {
     public class AuthenticationService
     {
-        private readonly JwtConfig _jwtConfig;
-        public AuthenticationService(JwtConfig jwtConfig)
-        {
-            _jwtConfig = jwtConfig;
-        }
-
-        public string GetToken(UserModel loggedUser, ModelUserLogin userlogin)
+        
+        public string GetToken(UserModel loggedUser, ModelUserLogin userlogin, IOptions<JwtConfig> options)
         {
 
             var claims = new[]
@@ -30,12 +26,12 @@ namespace MinimalAPIDemo.Services
 
             var token = new JwtSecurityToken
                 (
-                    issuer: _jwtConfig.Issuer,
-                    audience: _jwtConfig.Audience,
+                    issuer: options.Value.Issuer,
+                    audience: options.Value.Audience,
                     claims: claims,
                     expires: DateTime.UtcNow.AddDays(60),
                     signingCredentials: new SigningCredentials(
-                        new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtConfig.Key)),
+                        new SymmetricSecurityKey(Encoding.UTF8.GetBytes(options.Value.Key)),
                         SecurityAlgorithms.HmacSha256)
                 );
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
