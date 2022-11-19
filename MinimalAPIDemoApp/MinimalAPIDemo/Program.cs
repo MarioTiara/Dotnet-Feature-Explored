@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using MinimalAPIDemo;
 using MinimalAPIDemo.Config;
+using MinimalAPIDemo.Endpoint;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IUserData, UserData>();
+builder.Services.AddSingleton<IMovieData, MovieData>();
 builder.Services.Configure<JwtConfig>(builder.Configuration.GetSection("JwtConfig"));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options=>
@@ -42,6 +44,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-app.ConfigureApi();
+app.Configureapi();
 
 app.Run();
