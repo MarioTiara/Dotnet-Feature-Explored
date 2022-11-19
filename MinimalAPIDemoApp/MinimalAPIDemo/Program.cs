@@ -3,7 +3,7 @@ using DataAccess.DbAccess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using MinimalAPIDemo;
-using MinimalAPIDemo.Configuration;
+using MinimalAPIDemo.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,9 +23,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        ValidIssuer = builder.Configuration["JwtConfig:Issuer"],
+        ValidAudience = builder.Configuration["JwtConfig:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtConfig:Key"]))
     };
 });
 builder.Services.AddAuthorization();
