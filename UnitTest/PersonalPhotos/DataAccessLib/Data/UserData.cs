@@ -21,13 +21,13 @@ namespace DataAccessLib.Data
             return await _db.LoadData<UsersModel, dynamic>("dbo.spUser_GetAll", new { });
         }
 
-        public async Task<UsersModel?> GetUser(int id)
+        public async Task<UsersModel?> GetUser(string email)
         {
-            var result = await _db.LoadData<UsersModel, dynamic>("dbo.spUser_Get", new { Id = id });
+            var result = await _db.LoadData<UsersModel, dynamic>("dbo.spUser_Get", new { Email =email });
             return result.FirstOrDefault();
         }
 
-        public Task InsertMovie(UsersModel user) =>
+        public Task InsertUser(UsersModel user) =>
             _db.SaveData("dbo.spUser_Insert", user);
 
         public Task UpdateUser(int id) =>

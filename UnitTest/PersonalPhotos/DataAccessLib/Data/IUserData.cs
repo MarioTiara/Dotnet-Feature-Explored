@@ -4,9 +4,9 @@ namespace DataAccessLib.Data
 {
     public interface IUserData
     {
-        Task<UsersModel?> GetUser(int id);
+        Task<UsersModel?> GetUser(string email);
         Task<IEnumerable<UsersModel>> GetUsers();
-        Task InsertMovie(UsersModel user);
+        Task InsertUser(UsersModel user);
         Task UpdateUser(int id);
     }
 }
