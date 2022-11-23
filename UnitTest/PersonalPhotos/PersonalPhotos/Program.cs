@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IUserData, UserData>();
+builder.Services.AddSingleton<IPhotosData, PhotosData>();
 builder.Services.AddSingleton<ILocalFileStorage, LocalFileStorage>();
 var app = builder.Build();
 
