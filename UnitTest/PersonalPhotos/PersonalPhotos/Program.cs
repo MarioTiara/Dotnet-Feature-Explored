@@ -1,8 +1,14 @@
+using DataAccessLib.Data;
+using DataAccessLib.DbAccess;
+using DataAccessLib.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
+builder.Services.AddSingleton<IUserData, UserData>();
+builder.Services.AddSingleton<ILocalFileStorage, LocalFileStorage>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
