@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {}
+    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
+    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
+        "projectPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\mario.pratama\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\obj\\",
+        "outputPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mario.pratama\\AppData\\Roaming\\NuGet\\NuGet.Config",

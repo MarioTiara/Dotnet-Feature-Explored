@@ -41,3 +41,13 @@ E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\obj\Debug\n
 E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\obj\Debug\net6.0\MinimalAPIDemo.pdb
 E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\obj\Debug\net6.0\MinimalAPIDemo.genruntimeconfig.cache
 E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\obj\Debug\net6.0\ref\MinimalAPIDemo.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Personal\Dotnet-Feature-Explored\MinimalAPIDemoApp\MinimalAPIDemo\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

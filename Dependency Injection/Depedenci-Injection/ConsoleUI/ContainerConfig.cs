@@ -20,7 +20,6 @@ namespace ConsoleUI
                 .Where(t=>t.Namespace.Contains("Utilities"))
                 .As(t=>t.GetInterfaces().FirstOrDefault(i=>i.Name=="I"+t.Name));
 
-
             return builder.Build();
         }
 

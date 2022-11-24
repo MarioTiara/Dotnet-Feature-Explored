@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {}
+    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {}
   },
   "projects": {
-    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
+    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
+        "projectPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\mario.pratama\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\obj\\",
+        "outputPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mario.pratama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,14 +72,14 @@
         }
       }
     },
-    "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {
+    "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
+        "projectUniqueName": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
         "projectName": "MinimalAPIDemo",
-        "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
+        "projectPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\MinimalAPIDemo.csproj",
         "packagesPath": "C:\\Users\\mario.pratama\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\obj\\",
+        "outputPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\MinimalAPIDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mario.pratama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "E:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj"
+              "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "e:\\Personal\\Dotnet-Feature-Explored\\MinimalAPIDemoApp\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -119,6 +119,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

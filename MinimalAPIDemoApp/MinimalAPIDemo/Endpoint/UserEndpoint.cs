@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Options;
 using MinimalAPIDemo.Config;
 using MinimalAPIDemo.Models;
 using MinimalAPIDemo.Services;
@@ -7,6 +9,7 @@ namespace MinimalAPIDemo.Endpoint
 {
     public class UserEndpoint : IUserEndpoint
     {
+        
         public async Task<IResult> Login(ModelUserLogin user, IUserData data, IOptions<JwtConfig> options)
         {
             try
