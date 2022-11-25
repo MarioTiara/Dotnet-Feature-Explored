@@ -8,6 +8,6 @@ namespace CSharpFeatures
 {
     public static class Records
     {
-        public record Person(string name, string latsname);
+        public record Person(string name, string latsname, string[] PhoneNumbers);
     }
 }
